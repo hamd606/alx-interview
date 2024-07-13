@@ -60,9 +60,9 @@ if __name__ == "__main__":
     try:
         nn = int(n[1])
         if nn < 4:
-            print("N must be >= 4")
+            print("N must be at least 4")
             sys.exit(1)
         nqueens(nn)
     except ValueError:
-        print("N must be an integer")
+        print("N must be a number")
         sys.exit(1)
